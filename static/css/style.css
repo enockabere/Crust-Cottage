@@ -5,6 +5,9 @@ body{
 /*Navigation bar styles*/
 .navbar{
     background-color: #192021;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
 }
 .brand{
     color: white;
@@ -157,4 +160,39 @@ sup{
 }
 .head{
     color: #E67E22;
+}
+/*delicacy style*/
+.hold{
+    position: relative;
+}
+.image{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #229954;
+}
+.hold:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
