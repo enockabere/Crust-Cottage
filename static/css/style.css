@@ -76,6 +76,7 @@ body{
       rgba(0, 0, 0, 0.5)
     ),
     url(../img/hero/1.jpg);
+    background-attachment: scroll;
 }
 .card{
     margin-top: 100px;
@@ -124,4 +125,36 @@ sup{
     color: white;
     font-size: 30px;
     font-family: 'Caveat', cursive;
+}
+/*about*/
+.about{
+    background-color: #17202A ;
+}
+.section-header h2{
+    color: #229954;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+.left{
+    margin-top: 30px;
+}
+.right{
+    margin-top: 30px;
+}
+.right h3{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: white;
+}
+.right p{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+.head{
+    color: #E67E22;
 }
