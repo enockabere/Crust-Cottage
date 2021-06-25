@@ -41,9 +41,6 @@
                 <li class="nav-item">
                     <a class="item" href="#">Our Delicacies</a>
                 </li>
-                <li class="nav-item">
-                    <a class="item" href="#">Contact us</a>
-                </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <a href="#" class="btn btn-info btn-lg">
@@ -132,6 +129,96 @@
                                 <div class="text">Sicilian Pizza</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header">
+                        <h2>Make Order</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="myorder">
+                <div class="col-md-6">
+                    <div class="orders">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="delicacy">Select Your Delicacy</label>
+                                <select name="" class="form-control" id="delicacys">
+                                    <option value="">Detroit</option>
+                                    <option value="">Neapolitan Pizza</option>
+                                    <option value="">Sicilian Pizza</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="size">Select Your Pizza Size</label>
+                                <select name="" id="size" class="form-control">
+                                    <option value="">Large @Kshs 1500</option>
+                                    <option value="">Medium @Kshs 1000</option>
+                                    <option value="">Small @Kshs 700</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="crust">Add Crust To Your Delicacy</label>
+                                <select name="" id="crust" class="form-control">
+                                    <option value="">Crispy</option>
+                                    <option value="">Stuffed</option>
+                                    <option value="">Gluten-free</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="toppings">Add Some Toppings</label>
+                                <select name="" id="tops" class="form-control">
+                                    <option value="">Veges</option>
+                                    <option value="">Chicken</option>
+                                    <option value="">Bacon</option>
+                                </select>
+                            </div>
+                            <button class="btn-shop" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <th>Delicacy</th>
+                                <th>Pizza Size</th>
+                                <th>Crust</th>
+                                <th>Toppings</th>
+                                <th>Total Amount</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Detroit</td>
+                                    <td>Large</td>
+                                    <td>Crispy</td>
+                                    <td>Chicken</td>
+                                    <td>1500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form action="" id="nums">
+                        <label for="">Number of Pizza(s)</label>
+                        <input type="number" id="num" placeholder="Enter number of orders (numerical value" class="form-control">
+                    </form>
+                    <button class="btn-shop" type="submit">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rights">
+                        <h2>© Copyright Enock Abere. Hypertext Assassin</h2>
                     </div>
                 </div>
             </div>
