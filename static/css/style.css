@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #242424;
 }
@@ -17,7 +20,6 @@ body{
     font-family: 'Abel', sans-serif;
     text-decoration: none;
     font-size: 28px;
-
 }
 
 .brand:hover{
@@ -34,7 +36,6 @@ body{
     text-decoration: none;
     font-family: 'Caveat', cursive;
     font-size: 15px;
-
 }
 .active:hover{
     background-color: #E67E22;
@@ -50,7 +51,6 @@ body{
     text-decoration: none;
     font-family: 'Caveat', cursive;
     font-size: 15px;
-
 }
 .item:hover{
     background-color: #E67E22;
@@ -73,6 +73,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -82,11 +83,11 @@ body{
     background-attachment: scroll;
 }
 .card{
-    margin-top: 100px;
+    margin-top: 140px;
     background-color: transparent;
     border-color: transparent;
-    position: absolute;
-    
+    position: absolute; 
+    display: none;
 }
 .card-title h2{
     font-weight: 900;
@@ -129,6 +130,10 @@ sup{
     font-size: 30px;
     font-family: 'Caveat', cursive;
 }
+#but{
+    margin-top: 40px;
+}
+
 /*about*/
 .about{
     background-color: #17202A ;
@@ -263,3 +268,29 @@ td{
     text-align: center;
     padding: 10px;
     font-family: 'Caveat', cursive;
+}
+/*responsiveness*/
+@media screen and (min-width:480px) and (max-width:767px){
+    .brand{
+        color: white;
+        text-align: left;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: 'Abel', sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .nav-item{
+        padding: 20px;
+    }
+    .hero{
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .image{
+        margin: 15px;
+    }
+    .overlay{
+        margin: 15px;
+    }
+}
