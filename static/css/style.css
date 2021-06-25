@@ -169,6 +169,7 @@ sup{
     width: 100%;
     display: block;
     height: auto;
+    border: 5px solid white;
 }
 .overlay{
     position: absolute;
@@ -196,3 +197,69 @@ sup{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+/*make order styles*/
+.order{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/1.png);
+}
+#myorder{
+    background-color: black;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.orders{
+    margin-top: 20px;
+}
+label{
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+
+}
+option{
+    color: #E67E22;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+}
+option:hover{
+    background-color: #229954;
+}
+select{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.table-responsive{
+    margin-top: 20px;
+}
+
+th{
+    color:#E67E22;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+ 
+}
+td{
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+}
+#nums{
+    padding-bottom: 20px;
+}
+/*footer style*/
+.footer{
+    height: 60px;
+}
+.rights h2{
+    color: #E67E22;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
