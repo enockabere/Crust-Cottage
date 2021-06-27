@@ -7,65 +7,53 @@ body{
 
 /*Navigation bar styles*/
 .navbar{
-    background-color: #192021;
-    position: fixed;
-    width: 100%;
-    z-index: 900;
+    background-color: #223141;
+    height: 60px;
 }
-.brand{
-    color: white;
-    text-align: none;
-    font-weight: 900;
-    text-transform: uppercase;
+#text{
     font-family: 'Abel', sans-serif;
     text-decoration: none;
-    font-size: 28px;
+    color: #E67E22;
+    font-size: 18px;
+    font-weight: 900;
 }
-
-.brand:hover{
-    text-decoration: none;
-    color:white;
+.brand{
+    color: #229954;
+    font-family: 'Oswald', sans-serif;
 }
-.active{
-    background-color: #E67E22;
-    padding: 20px;
-    margin-left: 40px;
+#active{
     color: white;
-    text-transform: uppercase;
+    background-color: #E67E22;
     font-weight: 700;
     text-decoration: none;
     font-family: 'Caveat', cursive;
     font-size: 15px;
 }
-.active:hover{
-    background-color: #E67E22;
-    color: #229954;
-    text-decoration: none;
-}
-.item{
-    padding: 20px;
-    margin-left: 40px;
-    color: white;
-    text-transform: uppercase;
+.nav-link{
+    font-family: 'Caveat', cursive;
     font-weight: 700;
-    text-decoration: none;
     font-family: 'Caveat', cursive;
     font-size: 15px;
+    padding: 10px;
 }
-.item:hover{
-    background-color: #E67E22;
-    color: #229954;
-    text-decoration: none;
+#links{
+    color: white;
+}
+#links:hover{
+    background-color: #D35400;
 }
 .btn{
     background-color: #E67E22;
     border-color: #E67E22;
+    margin-left: 10px;
 }
 .btn:hover{
     background-color: #229954;
     border-color: #229954;
     color: #E67E22;
 }
+/*navbar styles end*/
+
 /*hero section*/
 .hero{
     height: 100vh;
@@ -81,9 +69,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.card{
+#cards{
     margin-top: 140px;
-    background-color: transparent;
+    background-color: red;
     border-color: transparent;
     position: absolute;
     display: none;
@@ -267,17 +255,8 @@ sup{
 }
 /*responsiveness*/
 @media screen and (min-width:480px) and (max-width:767px){
-    .brand{
-        color: white;
-        text-align: left;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-family: 'Abel', sans-serif;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .nav-item{
-        padding: 20px;
+    .navbar{
+        height: auto;
     }
     .hero{
         background-size: cover;
