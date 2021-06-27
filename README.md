@@ -31,7 +31,7 @@
     - If not delivered, you will see a summary of your order details.
     - If your order will be delivered, you will be prompted to enter your name, address and phone number on a pop-up modal and you will see a message alerting you about your order details and place of delivery after clicking the Check button.
 ## Live link
-    Deployed project can be accessed here -  [https://enockabere.github.io/Delani-Studio/)
+    [Deployed project can be accessed here]()
 ​
 ## Technologies used
     - HTML
