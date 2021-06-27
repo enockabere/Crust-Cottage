@@ -55,7 +55,7 @@
                 <h3><sup>Kshs</sup> <span class="amt">1500</span> <sup>any</sup> pizza</h3>
               </div>
               <div class="more">
-                <a href="#about">
+                <a href="#orders">
                   <button class="btn" id="btns">Shop <span class="brand">Now</span></button>
                 </a>
               </div>
@@ -64,7 +64,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-md-12">
             <div class="scrolls">
-              <a href="#" class="scroll-down" address="true">
+              <a href="#about" class="scroll-down" address="true">
                 <img class="img-fluid"src="static/img/mouse_click.png" alt="">
               </a>
               </div>
@@ -144,7 +144,7 @@
                 </div>
             </div>
             <div class="row">
-                  <div class="col-md-6" id="myorder">
+                  <div class="col-md-5" id="myorder">
                     <div class="Jumb" id="jumb">
                         <form>
                             <div class="form-group">
@@ -188,20 +188,22 @@
 
                     </div>
                   </div>
-                  <div class="col-md-6" id="result">
+                  <div class="col-md-7" id="result">
                     <div class="jumbotron" id="results">
                         <table class="table">
                             <thead class="thead">
                                 <tr>
+                                    <th>Qty</th>
                                     <th>Delicacy</th>
                                     <th>Size</th>
                                     <th>Crust</th>
                                     <th>Toppings</th>
-                                    <th>Total(Kshs)</th>
+                                    <th>Total(Each)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td id="qty"></td>
                                     <td id="dname"></td>
                                     <td id="sname"></td>
                                     <td id="cname"></td>
@@ -213,8 +215,16 @@
 
                        <button type="button" id="delivs" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Home Delivery?</button>
                        <button type="button" id="del" class="btn btn-success">Check Out</button>
-                       <p id="finish">Thank you for your business! We have recieved your order. Prepare Ksh.</p>
-                       <p id="finishtwo"><span id="nem"></span> ,Thank you for your business! We have recieved your order and it will be delivered to you at <span id="place"></span>. Prepare sh. <span id="last"></span></p>
+                       <div id="noDeliver">
+                         <p id="amount">Topping Price:</p>
+                         <p id="amountcrust">Crust Price:</p>
+                         <p id="finish">Thank you for your business! We have recieved your order. Total Amount Ksh.</span></p>
+                       </div>
+                      <div id="delivering">
+                        <p id="amount">Topping Price:</p>
+                        <p id="amountcrust">Crust Price:</p>
+                         <p id="finishtwo"><span id="nem"></span> ,Thank you for your business! We have recieved your order and it will be delivered to you at <span id="place"></span>. Total Amount Ksh. <span id="last"></span></p>
+                      </div>
                 </div>
             </div>
 
@@ -251,50 +261,14 @@
     </div>
   </div>
 </div>
-        <!-- The Modal
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
 
-
-        <div class="modal-header">
-          <h4 class="modal-title">You will be charged kshs. 400 Delivery Fees</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-
-        <div class="modal-body">
-          <form>
-              <div class="form-group">
-                  <label for="name">Your Name:</label>
-                  <input type="text" id="name" class="form-control" placeholder="Full Name">
-              </div>
-              <div class="form-group">
-                  <label for="Tel">Tel.</label>
-                  <input type="text" id="tel" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="form-group">
-                  <label for="address">Address</label>
-                  <input type="text" id="address" class="form-control" placeholder="Location">
-              </div>
-          </form>
-        </div>
-
-
-        <div class="modal-footer">
-          <button type="button" id="proceed" class="btn btn-danger" data-dismiss="modal">Submit Order</button>
-        </div>
-
-      </div>
-    </div>
-  </div>-->
     </section>
     <section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="rights">
-                        <h2>© Copyright Enock Abere. Hypertext Assassin</h2>
+                        <h3>© Copyright Enock Abere. Hypertext Assassin</h3>
                     </div>
                 </div>
             </div>
