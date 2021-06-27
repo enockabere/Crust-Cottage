@@ -1,34 +1,35 @@
 //animate hero section overlay
 $(document).ready(function(){
-    $("#overs").show(function(){
-        $("#overs").animate({
-            width: "100%",
-            opacity: 1,
-            left: "50px",
-            speed:"slow"
-        }, 4000);
-    });
+  $("#overs").show(function(){
+    $("#overs").animate({
+      width: "100%",
+      opacity: 1,
+      left: "50px",
+      speed:"slow"
+    }, 4000);
+  });
 });
+
 //scroll top
 var scrollbut = document.getElementById("myBtn"); //get button to scroll up
 
 //when user scrolls down up to 20px show the button
 window.onscroll = function () {
-    scrollFunction()
+  scrollFunction()
 };
 
 function scrollFunction (){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        scrollbut.style.display = "block";
-    }else {
-        scrollbut.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    scrollbut.style.display = "block";
+  }else {
+    scrollbut.style.display = "none";
+  }
 }
 
 //when user clicks on the button it scrolls to top
 function topFunction(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 /*----------make order javascript
@@ -98,23 +99,23 @@ $(document).ready(function(){
       default:
         console.log("error");
 
-    }
-    switch (pickCrust) {
-      case "Crispy":
-        crustPrice = 300;
-        console.log(crustPrice);
-      break;
-      case "Stuffed":
-        crustPrice = 350;
-        console.log(crustPrice);
-      break;
-      case "Gluten-Free":
-        crustPrice = 400;
-        console.log(crustPrice);
-      break;
-      default:
-        console.log("Crust Price Error!!");
-    }
+      }
+      switch (pickCrust) {
+        case "Crispy":
+          crustPrice = 300;
+          console.log(crustPrice);
+        break;
+        case "Stuffed":
+          crustPrice = 350;
+          console.log(crustPrice);
+        break;
+        case "Gluten-Free":
+          crustPrice = 400;
+          console.log(crustPrice);
+        break;
+        default:
+          console.log("Crust Price Error!!");
+      }
 
     //calculate total price of one pizza
     total = price + crustPrice + topPrice;
@@ -138,16 +139,15 @@ $(document).ready(function(){
       $("td#tname").append(newPizza.Top);
       $("td#charge").append(total);
 
-    //clear fields
+      //clear fields
 
-    $("select#delicacys").val("");
-    $("select#size").val("");
-    $("select#crust").val("");
-    $("select#tops").val("");
-    $("input#nums").val("");
-
-
+      $("select#delicacys").val("");
+      $("select#size").val("");
+      $("select#crust").val("");
+      $("select#tops").val("");
+      $("input#nums").val("");
   });
+  
   $("#del").click(function () {
     $("#noDeliver").show();
     $("#delivs").attr('disabled', true);
