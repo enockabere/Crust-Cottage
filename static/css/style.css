@@ -157,6 +157,7 @@ sup{
         font-size: 40px;
     }
 }
+
 /*about*/
 .about{
     background-color: #17202A ;
@@ -189,6 +190,7 @@ sup{
 .head{
     color: #D35400;
 }
+
 /*delicacy style*/
 .delicacy{
     padding-bottom: 30px;
@@ -306,22 +308,6 @@ table{
     padding: 10px;
     font-family: 'Caveat', cursive;
 }
-/*responsiveness*/
-@media screen and (min-width:480px) and (max-width:767px){
-    .navbar{
-        height: auto;
-    }
-    .hero{
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    #thumbs{
-        margin: 15px;
-    }
-    .overlay{
-        margin: 15px;
-    }
-}
 /*scrolltop*/
 #myBtn {
     display: none;
@@ -342,3 +328,20 @@ table{
   #myBtn:hover {
     background-color:#229954;
   }
+
+/*responsiveness*/
+@media screen and (min-width:480px) and (max-width:767px){
+    .navbar{
+        height: auto;
+    }
+    .hero{
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #thumbs{
+        margin: 15px;
+    }
+    .overlay{
+        margin: 15px;
+    }
+}
