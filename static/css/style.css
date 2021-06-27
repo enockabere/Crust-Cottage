@@ -264,7 +264,7 @@ label{
     background-color: #E67E22;
     margin-bottom: 39px;
     font-family: 'Abel', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 thead{
   background-color: #0E6251;
@@ -272,14 +272,20 @@ thead{
 table{
   background-color: #CCD1D1;
 }
+#noDeliver{
+  display: none;
+  margin-top: 20px;
+}
+#delivering{
+  display: none;
+  margin-top: 20px;
+}
 #finish{
-    display: none;
     margin-top: 20px;
     color: #0E6251;
     font-weight: 800;
 }
 #finishtwo{
-    display: none;
     margin-top: 20px;
     color: #0E6251;
     font-weight: 800;
@@ -294,7 +300,7 @@ table{
 .footer{
     height: 60px;
 }
-.rights h2{
+.rights h3{
     color: #E67E22;
     text-align: center;
     padding: 10px;
@@ -335,9 +341,4 @@ table{
 
   #myBtn:hover {
     background-color:#229954;
-  }
-  .contact{
-    color: Black;
-    text-decoration: none;
-    font-size: 18px;
   }
