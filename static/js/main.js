@@ -34,7 +34,7 @@ function topFunction(){
 /*----------make order javascript
 starts here-------------*/
 
-var crustPrice, price, dPrice;
+var crustPrice, price, dPrice,topPrice;
 var total,newTotal;
 
 //constructor
@@ -68,6 +68,8 @@ $(document).ready(function(){
 
     event.preventDefault();
 
+    $("#submit").attr('disabled', true);
+
     //get customer Pizza preference
     var pickDelicacy = $("#delicacys option:selected").val();
     var pickSize = $("#size option:selected").val();
@@ -79,14 +81,18 @@ $(document).ready(function(){
     switch (pickSize) {
       case "Large" :
         price = 1500;
+        topPrice = 100;
         console.log(price);
+        console.log(topPrice);
       break;
       case "Medium":
         price = 1000;
+        topPrice = 150;
         console.log(price);
       break;
       case "Small" :
         price = 700;
+        topPrice = 200;
         console.log(prce);
       break;
       default:
@@ -111,18 +117,21 @@ $(document).ready(function(){
     }
 
     //calculate total price of one pizza
-    total = price + crustPrice;
+    total = price + crustPrice + topPrice;
 
     var newPizza = new Pizaa(pickDelicacy,pickSize,pickCrust,pickTop);
 
     //price of more than one pizza
-    if (x<=0 || x>=100) {
+    if (x<0 || x>=100) {
       alert("invalid Entry! Your order cant be more than 100 or less or equal to 0")
+    }else if (x==0){
+      newTotal = (x+1)*total;
     }else {
       newTotal = x*total;
     }
     console.log(newTotal);
 
+      $("td#qty").append(x);
       $("td#dname").append(newPizza.Delicacy);
       $("td#sname").append(newPizza.Size);
       $("td#cname").append(newPizza.Crust);
@@ -140,9 +149,11 @@ $(document).ready(function(){
 
   });
   $("#del").click(function () {
-    $("#delivs").hide();
-    $("#finish").show();
-    $("p#finish").append(total);
+    $("#noDeliver").show();
+    $("#delivs").attr('disabled', true);
+    $("p#finish").append(del());
+    $("p#amount").append(topPrice);
+    $("p#amountcrust").append(crustPrice);
   });
 });
 
@@ -151,7 +162,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("button#proceed").click(function(event){
     event.preventDefault();
-
+    $("#delivering").show();
     var names = $("input#name").val();
     var tels = $("input#tel").val();
     var adds = $("input#address").val();
@@ -162,6 +173,8 @@ $(document).ready(function(){
     $("span#nem").append(names);
     $("span#place").append(adds);
     $("span#last").append(del());
+    $("p#amount").append(topPrice);
+    $("p#amountcrust").append(crustPrice);
 
         //clear fields
 
@@ -174,8 +187,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("button#delivs").click(function(event){
     event.preventDefault();
-    $("#finishtwo").show();
-
+    $("#del").attr('disabled', true);
   });
 });
 
