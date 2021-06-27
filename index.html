@@ -45,6 +45,7 @@
         </div>
       </nav>
     </section><!--end navigation bar-->
+    <!--Start hero section-->
     <section class="hero">
         <div class="container">
           <div class="row">
@@ -64,60 +65,37 @@
           <div class="col-sm-12 col-md-12 col-md-12">
             <div class="scrolls">
               <a href="#" class="scroll-down" address="true">
-                <img src="static/img/mouse_click.png" alt="">
+                <img class="img-fluid"src="static/img/mouse_click.png" alt="">
               </a>
               </div>
             </div>
         </div>
      </div>
-    </section>
-    <!--hero section start-
-    <section class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card" id="cards">
-                        <div class="card-title">
-                            <h2>Large pizzas.Online order only!</h2>
-                        </div>
-                        <div class="card-body">
-                            <h3><sup>Kshs</sup> <span class="amt">1500</span> <sup>any</sup> pizza</h3>
-                            <a href="#orders">
-                                <button class="btn-shop" id="but">Shop Now</button>
-                            </a>
-                        </div>
-                        <div class="card-footer">
-                            <p>We are committed to Your satisfaction with every order. Get started Today.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!--about Section-->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header">
-                        <h2>About <span class="head">Crust Cottage</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="left">
-                        <img  class="img-responsive" src="static/img/about/1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="right">
-                        <p>Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired ove</p>
-                        <p>Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired ove</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+   </section><!--end hero section-->
+  <!--about Section-->
+  <section class="about" id="about">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="section-header">
+                      <h2>About <span class="head">Crust Cottage</span></h2>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-5 col-lg-5">
+                  <div class="left">
+                      <img class="img-fluid" src="static/img/about/1.png" alt="">
+                  </div>
+              </div>
+              <div class="col-md-7">
+                  <div class="right">
+                      <p>Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired ove</p>
+                      <p>Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired ove</p>
+                  </div>
+              </div>
+          </div>
+      </div>
     </section>
     <section class="delicacy">
         <div class="container">
@@ -130,7 +108,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="hold">
-                            <img class="image" src="static/img/delicacy/1.jpg" alt="">
+                            <img class="img-fluid" id="thumbs" src="static/img/delicacy/1.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">Detroit Pizza</div>
                             </div>
@@ -138,7 +116,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="hold">
-                            <img class="image" src="static/img/delicacy/2.jpg" alt="">
+                            <img class="img-fluid" id="thumbs" src="static/img/delicacy/2.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">Neapolitan Pizza</div>
                             </div>
@@ -146,7 +124,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="hold">
-                            <img class="image" src="static/img/delicacy/3.jpg" alt="">
+                            <img class="img-fluid" id="thumbs" src="static/img/delicacy/3.jpg" alt="">
                             <div class="overlay">
                                 <div class="text">Sicilian Pizza</div>
                             </div>
@@ -213,7 +191,7 @@
                   <div class="col-md-6" id="result">
                     <div class="jumbotron" id="results">
                         <table class="table">
-                            <thead class="thead dark">
+                            <thead class="thead">
                                 <tr>
                                     <th>Delicacy</th>
                                     <th>Size</th>
@@ -233,10 +211,10 @@
                             </tbody>
                         </table>
 
-                       <button type="button" id="delivs" class="btn btn-success" data-toggle="modal" data-target="#myModal">Home Delivery?</button>
+                       <button type="button" id="delivs" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Home Delivery?</button>
                        <button type="button" id="del" class="btn btn-success">Check Out</button>
-                       <p id="finish">We have recieved your order. Prepare Ksh.</p>
-                       <p id="finishtwo"><span id="nem"></span> , We have recieved your order and it will be delivered to you at <span id="place"></span>. Prepare sh. <span id="last"></span></p>
+                       <p id="finish">Thank you for your business! We have recieved your order. Prepare Ksh.</p>
+                       <p id="finishtwo"><span id="nem"></span> ,Thank you for your business! We have recieved your order and it will be delivered to you at <span id="place"></span>. Prepare sh. <span id="last"></span></p>
                 </div>
             </div>
 
@@ -244,18 +222,47 @@
           </div>
     </section>
     <section>
-        <!-- The Modal -->
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">You will be charged kshs. 400 Delivery Fees</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="Tel">Tel.</label>
+                <input type="text" id="tel" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" class="form-control" placeholder="Location">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="proceed" class="btn btn-secondary" data-bs-dismiss="modal">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- The Modal
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
 
-        <!-- Modal Header -->
+
         <div class="modal-header">
           <h4 class="modal-title">You will be charged kshs. 400 Delivery Fees</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
-        <!-- Modal body -->
+
         <div class="modal-body">
           <form>
               <div class="form-group">
@@ -273,14 +280,14 @@
           </form>
         </div>
 
-        <!-- Modal footer -->
+
         <div class="modal-footer">
           <button type="button" id="proceed" class="btn btn-danger" data-dismiss="modal">Submit Order</button>
         </div>
 
       </div>
     </div>
-  </div>
+  </div>-->
     </section>
     <section class="footer">
         <div class="container">
@@ -293,6 +300,14 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript">
+    var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+myInput.focus()
+})
+    </script>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!--Jquery, Bootstrap and main js--->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
