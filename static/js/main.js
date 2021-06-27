@@ -1,6 +1,7 @@
+//animate hero section overlay
 $(document).ready(function(){
-    $("#cards").show(function(){
-        $("#cards").animate({
+    $("#overs").show(function(){
+        $("#overs").animate({
             width: "100%",
             opacity: 1,
             left: "50px",
@@ -174,7 +175,7 @@ $(document).ready(function(){
   $("button#delivs").click(function(event){
     event.preventDefault();
     $("#finishtwo").show();
-  
+
   });
 });
 
